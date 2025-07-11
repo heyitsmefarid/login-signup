@@ -41,6 +41,7 @@ input[type="password"] {
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin-top: 12px;
+    outline: none;
 }
 
 .btnlogin {
@@ -65,19 +66,21 @@ input[type="password"] {
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
-    flex-wrap: wrap;
     font-size: 14px;
+    flex-wrap: nowrap;
+    gap: 10px;
 }
 
 .remember {
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 5px;
 }
 
 .forgot {
     color: #6a1b9a;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .forgot:hover {
@@ -116,13 +119,52 @@ hr {
         font-size: 24px;
     }
 
+    .login-box {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .btnlogin,
+    .btnsignup {
+        font-size: 16px;
+        padding: 12px;
+    }
+
     .options {
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
     }
 
     .forgot {
-        align-self: flex-end;
+        text-align: right;
+        display: block;
+        margin-left: auto;
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .login-box {
+        padding: 30px;
+    }
+
+    .btnlogin,
+    .btnsignup {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 18px;
     }
 }
