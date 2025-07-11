@@ -79,8 +79,9 @@ input[type="password"] {
     align-items: center;
     font-size: 14px;
     margin-top: 10px;
-    padding: 0 10px;
-    flex-wrap: wrap;
+    padding: 0 1px;
+    width: 100%;
+    flex-wrap: nowrap;
 }
 
 .remember {
@@ -92,6 +93,7 @@ input[type="password"] {
 .forgot {
     color: #6a1b9a;
     text-decoration: none;
+    margin-left: auto;
 }
 
 .forgot:hover {
@@ -106,33 +108,14 @@ hr {
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 26px;
-    }
-
-    .btnlogin,
-    .btnsignup {
-        font-size: 16px;
-        padding: 12px;
-    }
-
-    input[type="text"],
-    input[type="password"] {
-        font-size: 16px;
-        padding: 12px;
-    }
-
     .options {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 5px;
-        padding-left: 0;
-        padding-right: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
     }
 
     .forgot {
-        text-align: right;
-        width: 100%;
-        display: block;
+        margin-left: auto;
     }
 }
