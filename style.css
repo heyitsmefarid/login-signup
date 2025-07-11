@@ -3,10 +3,7 @@ body {
     padding: 0;
     text-align: center;
     background-image: url('anime.gif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
+  
 }
 
 .login-box {
