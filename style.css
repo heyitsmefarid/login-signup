@@ -82,18 +82,21 @@ input[type="password"] {
     padding: 0 1px;
     width: 100%;
     flex-wrap: nowrap;
+    gap:5px;
 }
 
 .remember {
     display: flex;
     align-items: center;
     gap: 5px;
+    flex-shrink: 0;
 }
 
 .forgot {
     color: #6a1b9a;
     text-decoration: none;
     margin-left: auto;
+    flex-shrink: 0;
 }
 
 .forgot:hover {
@@ -109,13 +112,11 @@ hr {
 
 @media (max-width: 768px) {
     .options {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         padding: 0 10px;
+        gap: 5px;
     }
 
-    .forgot {
-        margin-left: auto;
+    .remember, .forgot {
+        font-size: 13px;
     }
 }
